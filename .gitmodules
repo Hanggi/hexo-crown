@@ -1,0 +1,3 @@
+[submodule "hanggi.github.io"]
+	path = hanggi.github.io
+	url = git@github.com:Hanggi/hanggi.github.io.git
