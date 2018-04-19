@@ -71,3 +71,9 @@ deploy:
   type: git
   repo: https://github.com/Hanggi/hanggi.github.io.git
   barnch: master
+
+
+# MathJax Support
+mathjax:
+  enable: true
+  per_page: true
