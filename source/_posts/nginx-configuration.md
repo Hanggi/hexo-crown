@@ -1,11 +1,17 @@
 ---
-title: nginx_configuration
+title: Nginx 基本配置
 date: 2018-04-23 13:33:03
 tags:
 ---
 
 
 # Nginx 基本配置 #
+
+Nginx 作为 nodejs 的反向代理是很好的选择。我们通常在本地测试很多个应用程序，
+
+
+----------
+
 
 ### 安装 ###
 
