@@ -10,7 +10,7 @@ tags:
 Nginx 作为 nodejs 的反向代理是很好的选择。我们通常在本地测试很多个应用程序，
 
 
-----------
+<!-- more -->
 
 
 ### 安装 ###
@@ -127,7 +127,7 @@ handler.on('push', function (event) {
 ```sh
 #!/bin/bash
 
-WEB_PATH='/root/koa2-build'
+WEB_PATH='/home/hanggi/proj' # 你的项目地址
 
 echo "Start deployment!"
 cd $WEB_PATH
