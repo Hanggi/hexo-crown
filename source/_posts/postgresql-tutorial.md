@@ -1,5 +1,5 @@
 ---
-title: postgresql-tutorial
+title: postgreSQL-基本
 date: 2018-04-24 13:21:51
 tags:
 ---
@@ -14,13 +14,13 @@ PostgreSQL是自由的对象-关系型数据库服务器（数据库管理系统
 
 macOS:
 
-```c
+```bash
 $ brew install postgresql
 ```
 
 ubuntu:
 
-```c
+```bash
 $ sudo apt-get install postgresql
 ```
 
@@ -29,23 +29,26 @@ $ sudo apt-get install postgresql
 
 首先要进入postgres的用户来管理数据库。
 
-```c
+```bash
 $ sudo su postgres
 ```
 
 这时候可能会遇到 `FATAL: role “postgres” does not exist`，输入以下命令解决：
 
-```c
+```sql
 $ CREATE USER postgres SUPERUSER;
 ```
 
 然后是常用的一些命令集合：
 
-```c
-\l              // List of databases
+```sql
+// List of databases
+\l
 
-craete table posts (title varchar(64), content text);       // 创建表
+// 创建表
+craete table posts (title varchar(64), content text);
 
-\dt             // List of relations, 就是列出表
+// List of relations, 就是列出表
+\dt
 
 ```
