@@ -5,7 +5,6 @@ tags:
 ---
 
 
-
 PostgreSQL是自由的对象-关系型数据库服务器（数据库管理系统），在灵活的BSD风格许可证下发行。
 
 <!-- more -->
@@ -27,22 +26,29 @@ $ sudo apt-get install postgresql
 
 ## 基本命令 ##
 
-首先要进入postgres的用户来管理数据库。
+首先要进入postgres的用户来管理数据库，并进入数据库。
 
 ```bash
 $ sudo su postgres
+$ psql
 ```
 
 这时候可能会遇到 `FATAL: role “postgres” does not exist`，输入以下命令解决：
 
 ```sql
-$ CREATE USER postgres SUPERUSER;
+# CREATE USER postgres SUPERUSER;
+```
+
+如果需要修改密码：
+
+```sql
+# ALTER USER postgres WITH PASSWORD 'postgres';
 ```
 
 然后是常用的一些命令集合：
 
-```sql
-// List of databases
+```c
+// List of databases，列出数据库
 \l
 
 // 创建表
