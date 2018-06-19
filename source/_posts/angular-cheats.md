@@ -54,3 +54,36 @@ $ ng serve --proxy-config proxy.conf.json
 ```
 
 意思就是说，所有api版本为1的请求都转发到3000端口。
+
+
+===================================
+
+## Angular with elec ##
+
+首先下载elec的快速启动包：
+
+```bash
+git clone https://github.com/electron/electron-quick-start
+cd electron-quick-start
+npm i
+```
+
+这样一个快速启动的elec安装完成，接下来新建angular：
+
+```bash
+ng new angular
+```
+
+需要设置几个简单的东西。一个是ng的分发设置：
+
+```json
+"dist": "ng build --prod --output-path=../dist --base-href=./ && cp ../dist/index.html ../"
+```
+
+还有就是elec的启动文件目录：
+
+```js
+    ...
+    mainWindow.loadFile('dist/index.html')
+    ...
+```
