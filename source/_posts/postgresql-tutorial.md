@@ -98,6 +98,7 @@ DELETE FROM table_name WHERE [condition];
 SELECT * FROM table_name WHERE [condition] ORDER BY column [ASC | DESC] LIMIT 10;
 ```
 
+修改表：
 
 
 ## 数据库命令行 ##

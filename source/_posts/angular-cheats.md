@@ -87,3 +87,38 @@ ng new angular
     mainWindow.loadFile('dist/index.html')
     ...
 ```
+
+更改默认样式文件格式：
+
+```
+ng config defaults.styleExt=scss
+```
+
+## Angular material ##
+
+基本安装：
+
+```bash
+npm i --save @angular/material @angular/cdk @angular/animations
+```
+
+在style.css里加载基本主题
+
+```css
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+```
+
+hammerjs
+
+```bash
+npm i --save hammerjs
+```
+
+并加载到 `src/main.ts` 里 ： `import 'hammerjs';`
+
+index.html 里加上icons：
+
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+```
+
