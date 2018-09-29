@@ -39,31 +39,31 @@ This is an H1
 This is an H2
 -------------
 
-# 标题测试文 #
+# 标题测试文 # #
 
 现实世界的光照是极其复杂的，而且会受到诸多因素的影响，这是以目前我们所拥有的处理能力无法模拟的。因此OpenGL的光照仅仅使用了简化的模型并基于对现实的估计来进行模拟，这样处理起来会更容易一些，而且看起来也差不多一样。这些光照模型都是基于我们对光的物理特性的理解。
 
-## 标题测试文 ##
+## 标题测试文 ##  ##
 
 现实世界的光照是极其复杂的，而且会受到诸多因素的影响，这是以目前我们所拥有的处理能力无法模拟的。因此OpenGL的光照仅仅使用了简化的模型并基于对现实的估计来进行模拟，这样处理起来会更容易一些，而且看起来也差不多一样。这些光照模型都是基于我们对光的物理特性的理解。
 
-### 标题测试文 ###
+### 标题测试文 ### ###
 
 现实世界的光照是极其复杂的，而且会受到诸多因素的影响，这是以目前我们所拥有的处理能力无法模拟的。因此OpenGL的光照仅仅使用了简化的模型并基于对现实的估计来进行模拟，这样处理起来会更容易一些，而且看起来也差不多一样。这些光照模型都是基于我们对光的物理特性的理解。
 
-#### 标题测试文 #####
+#### 标题测试文 #### #####
 
 现实世界的光照是极其复杂的，而且会受到诸多因素的影响，这是以目前我们所拥有的处理能力无法模拟的。因此OpenGL的光照仅仅使用了简化的模型并基于对现实的估计来进行模拟，这样处理起来会更容易一些，而且看起来也差不多一样。这些光照模型都是基于我们对光的物理特性的理解。
 
-##### 标题测试文 #####
+##### 标题测试文 ##### #####
 
 现实世界的光照是极其复杂的，而且会受到诸多因素的影响，这是以目前我们所拥有的处理能力无法模拟的。因此OpenGL的光照仅仅使用了简化的模型并基于对现实的估计来进行模拟，这样处理起来会更容易一些，而且看起来也差不多一样。这些光照模型都是基于我们对光的物理特性的理解。
 
-###### 标题测试文 ######
+###### 标题测试文 ###### ######
 
 现实世界的光照是极其复杂的，而且会受到诸多因素的影响，这是以目前我们所拥有的处理能力无法模拟的。因此OpenGL的光照仅仅使用了简化的模型并基于对现实的估计来进行模拟，这样处理起来会更容易一些，而且看起来也差不多一样。这些光照模型都是基于我们对光的物理特性的理解。
 
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+> \>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
 > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 > 
@@ -72,7 +72,7 @@ This is an H2
 
 > This is the first level of quoting.
 >
-> > This is nested blockquote.
+> > \> \>This is nested blockquote.
 >
 > Back to the first level.
 
@@ -91,6 +91,7 @@ This is an H2
 代码段
 
 ```js
+\````
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -110,17 +111,17 @@ server.listen(port, hostname, () => {
 ----
 
 
-* Red *
+* Red * *
 * Green *
 * Blue *
 
-+   Red
-+   Green
-+   Blue
++   +Red
++   +Green
++   +Blue
 
--   Red
--   Green
--   Blue
+-   -Red
+-   -Green
+-   -Blue
 
 1.  Bird
 2.  McHale
@@ -133,11 +134,11 @@ server.listen(port, hostname, () => {
 
 
 
-*This text will be italic*
-_This will also be italic_
+*This [*] text will be italic*
+_This [_] will also be italic_
 
-**This text will be bold**
-__This will also be bold__
+**This [**] text will be bold**
+__This [__] will also be bold__
 
 _You **can** combine them_
 
