@@ -49,16 +49,19 @@ pip 18.1 from /usr/local/lib/python3.7/site-packages/pip (python 3.7)
 # 2, 第一个Python程序
 
 ```python
-print("Hello Word)
+print("Hello Word!")
 ```
 
 执行：
 
 ```bash
 $ python hellow.py
+Hello World!
 ```
 
 # 3, 显示策略盘面
+
+要实现交易策略首先要分析盘面，通常我们会交易所网站上查看实时的交易记录，也就是我们俗说的K线。
 
 # 4, 标明指数
 
