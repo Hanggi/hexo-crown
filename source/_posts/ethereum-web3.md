@@ -47,6 +47,16 @@ if (typeof web3 !== 'undefined') {
 let account = await web3.eth.accounts.create();
 //Generates an account object with private key and public key.
 
+{ 
+    address: '0x50b874a51908B84fD9F541619aD5CbfB0f1B5d00',
+    privateKey: '0xea87ac67f09de2478c47d267254433bb995e239c739baa13de51dbad7aec0c6c',
+    signTransaction: [Function: signTransaction],
+    sign: [Function: sign],
+    encrypt: [Function: encrypt]
+}
+// 这个函数会范围上述类型的账户对象，提供地址、密钥、签名函数、加密函数。
+
+
 // 使用个人密码加密密钥
 let keystore = await account.encrypt(password);
 // or
